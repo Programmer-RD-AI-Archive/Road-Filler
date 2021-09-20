@@ -30,3 +30,11 @@ GPIO.output(in4,GPIO.LOW)
 GPIO.output(OUT,GPIO.LOW)
 p1=GPIO.PWM(en1,1000)
 p2=GPIO.PWM(en2,1000)
+
+p1.start(25)
+p2.start(25)
+print("\n")
+print("The default speed & direction of motor is LOW & Forward.....")
+print("r-run s-stop f-forward b-backward l-low m-medium h-high e-exit")
+print("\n")    
+a = 0
