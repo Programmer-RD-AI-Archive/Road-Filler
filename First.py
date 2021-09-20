@@ -11,3 +11,22 @@ en2 = 7
 TRIG = 4
 ECHO = 18
 OUT = 20
+
+
+GPIO.setmode(GPIO.BCM)
+GPIO.setup(TRIG,GPIO.OUT)
+GPIO.setup(ECHO,GPIO.IN)
+GPIO.setup(in1,GPIO.OUT)
+GPIO.setup(in2,GPIO.OUT)
+GPIO.setup(in3,GPIO.OUT)
+GPIO.setup(in4,GPIO.OUT)
+GPIO.setup(en1,GPIO.OUT)
+GPIO.setup(en2,GPIO.OUT)
+GPIO.setup(OUT,GPIO.OUT)
+GPIO.output(in1,GPIO.LOW)
+GPIO.output(in2,GPIO.LOW)
+GPIO.output(in3,GPIO.LOW)
+GPIO.output(in4,GPIO.LOW)
+GPIO.output(OUT,GPIO.LOW)
+p1=GPIO.PWM(en1,1000)
+p2=GPIO.PWM(en2,1000)
